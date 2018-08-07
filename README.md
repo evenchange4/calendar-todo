@@ -124,7 +124,7 @@ Screenshot:
 
 MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 
-[travis-badge]: https://img.shields.io/travis/evenchange4/calendar-todo/master.svg?style=flat-square
+[travis-badge]: https://travis-ci.com/evenchange4/calendar-todo.svg?branch=master
 [travis]: https://travis-ci.org/evenchange4/calendar-todo
 [codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/calendar-todo.svg?style=flat-square
 [codecov]: https://codecov.io/github/evenchange4/calendar-todo?branch=master
