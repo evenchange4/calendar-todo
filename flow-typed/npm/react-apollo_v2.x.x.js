@@ -1019,3 +1019,7 @@ declare module "react-apollo" {
     context?: { [string]: any }
   }> {}
 }
+
+declare module 'react-apollo/test-utils' {
+  declare module.exports: any;
+}

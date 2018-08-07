@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rest modules query Events 1`] = `
+Object {
+  "events": Array [
+    Object {
+      "id": "sfodsvfr8btnaciku1ktg464m0",
+      "location": "Taipei",
+      "summary": "AWS Online Tech Talks: On-Demand Library",
+    },
+    Object {
+      "id": "0kv1j0ol9d02ihca1p8qcv5trc",
+      "location": "taipei",
+      "summary": "Workshop 1: AWS 101 - Introduction to AWS Cloud Computing",
+    },
+  ],
+}
+`;

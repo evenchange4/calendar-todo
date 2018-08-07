@@ -1,0 +1,33 @@
+{
+  "data": {
+    "kind": "calendar#event",
+    "etag": "\"3067289974868000\"",
+    "id": "0kv1j0ol9d02ihca1p8qcv5trc",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MGt2MWowb2w5ZDAyaWhjYTFwOHFjdjV0cmMgZXZlbmNoYW5nZTNAbQ",
+    "created": "2018-08-07T00:46:07.000Z",
+    "updated": "2018-08-07T12:29:47.434Z",
+    "summary": "Workshop 1: AWS 101 - Introduction to AWS Cloud Computing",
+    "description": "Join the Introduction in AWS Cloud Computing Workshop and understand the core concepts of “Cloud Computing” plus the different attributes such as reliability, fault tolerance, elasticity, scalability and pay-as-you-go pricing. Whether you are an Enterprise looking for IT innovation, agility and resiliency while reducing costs or small and medium business who wants to accelerate growth without a big upfront investment in cash or time for technology, the AWS Cloud provides a complete set of infrastructure services at zero upfront costs which are available with a few clicks and within minutes.",
+    "location": "taipei",
+    "creator": {
+      "email": "evenchange3@gmail.com",
+      "self": true
+    },
+    "organizer": {
+      "email": "evenchange3@gmail.com",
+      "self": true
+    },
+    "start": {
+      "dateTime": "2018-08-07T00:00:00+08:00"
+    },
+    "end": {
+      "dateTime": "2018-08-07T08:00:00+08:00"
+    },
+    "iCalUID": "0kv1j0ol9d02ihca1p8qcv5trc@google.com",
+    "sequence": 0,
+    "reminders": {
+      "useDefault": true
+    }
+  }
+}

@@ -2,6 +2,10 @@
 
 > Google calendar todo list application with GraphQL proxy.
 
+[![Travis][travis-badge]][travis]
+[![Codecov Status][codecov-badge]][codecov]
+[![license][license-badge]][license]
+
 ## Demo
 
 https://calendar-todo-web.now.sh/
@@ -108,3 +112,20 @@ $ docker build -t calendar-todo/web .
 
 Screenshot:
 ![web](./docs/web.png)
+
+## CONTRIBUTING
+
+- ⇄ Pull requests and ★ Stars are always welcome.
+- For bugs and feature requests, please create an issue.
+- Pull requests must be accompanied by passing automated tests.
+
+## [LICENSE](LICENSE)
+
+MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
+
+[travis-badge]: https://travis-ci.com/evenchange4/calendar-todo.svg?branch=master
+[travis]: https://travis-ci.org/evenchange4/calendar-todo
+[codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/calendar-todo.svg?style=flat-square
+[codecov]: https://codecov.io/github/evenchange4/calendar-todo?branch=master
+[license-badge]: https://img.shields.io/github/license/evenchange4/micro-website-api.svg?style=flat-square
+[license]: http://michaelhsu.mit-license.org/
