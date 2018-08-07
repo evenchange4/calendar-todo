@@ -1,0 +1,7 @@
+.next/
+coverage/
+node_modules/.cache
+pkg/
+storybook-static/
+.env
+Dockerfile

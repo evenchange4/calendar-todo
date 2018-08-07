@@ -1,0 +1,93 @@
+{
+  "private": true,
+  "name": "server",
+  "version": "0.0.0",
+  "license": "MIT",
+  "bin": "lib/index.js",
+  "pkg": {
+    "assets": [
+      ".env.example"
+    ],
+    "scripts": [
+      "lib/**/*.js"
+    ]
+  },
+  "scripts-info": {
+    "dev": "[Development] Run a livereload dev server.",
+    "build": "[Production] Compile source code to CJS with babel.",
+    "start": "[Production] Run a production server.",
+    "pkg": "[Production] Package into an binary."
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js --watch src --exec babel-node",
+    "build": "rm -rf lib && NODE_ENV='production' babel src -d lib --ignore '*/__tests__,*/__mock-data__'",
+    "start": "node ./lib/index.js",
+    "pkg": "pkg . --targets node10-alpine-x64 --out-path pkg",
+    "test": "NODE_ENV='test' TZ='UTC' jest --coverage",
+    "test:watch": "npm run test -- --watch"
+  },
+  "dependencies": {
+    "apollo-server": "^2.0.0",
+    "apollo-server-express": "^2.0.0",
+    "chalk": "^2.4.1",
+    "compression": "^1.7.3",
+    "debug": "^3.1.0",
+    "dotenv-safe": "^6.0.0",
+    "express": "^4.16.3",
+    "fs-extra": "^7.0.0",
+    "googleapis": "^32.0.0",
+    "graphql": "^0.13.2",
+    "helmet": "^3.13.0",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.56",
+    "@babel/core": "^7.0.0-beta.56",
+    "@babel/node": "^7.0.0-beta.56",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.56",
+    "@babel/preset-env": "^7.0.0-beta.56",
+    "@babel/preset-flow": "^7.0.0-beta.56",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-add-module-exports": "^0.3.2",
+    "fkill": "^5.3.0",
+    "flow-bin": "^0.78.0",
+    "get-port": "^4.0.0",
+    "graphql-request": "^1.8.0",
+    "jest": "^23.4.2",
+    "nock": "^9.4.4",
+    "nodemon": "^1.18.3",
+    "pkg": "^4.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/**/*.test.{js,jsx}"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/"
+    ],
+    "resetMocks": true,
+    "resetModules": true
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "@babel/preset-flow"
+    ],
+    "plugins": [
+      "babel-plugin-add-module-exports",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  }
+}

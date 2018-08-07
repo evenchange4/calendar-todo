@@ -1,0 +1,20 @@
+node_modules/
+
+# jest
+coverage/
+
+# server
+packages/server/pkg/
+packages/server/token.json
+
+# web
+.next
+# include (negative ignore)
+!.storybook/
+storybook-static
+
+# flow
+flow-typed/
+
+# library
+packages/*/lib/

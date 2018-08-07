@@ -1,0 +1,7 @@
+coverage/
+lib/
+node_modules/.cache
+pkg/
+.env
+Dockerfile
+token.json

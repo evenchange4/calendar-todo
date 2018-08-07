@@ -1,0 +1,105 @@
+{
+  "private": true,
+  "name": "web",
+  "version": "0.0.0",
+  "license": "MIT",
+  "bin": "server.js",
+  "pkg": {
+    "assets": [
+      ".next/**/*",
+      ".env.example"
+    ],
+    "scripts": [
+      ".next/server/**/*.js"
+    ]
+  },
+  "scripts-info": {
+    "dev": "[Development] Run a livereload dev server.",
+    "build": "[Production] Compile source code to CJS with babel.",
+    "start": "[Production] Run a production server.",
+    "pkg": "[Production] Compile source code to binary via pkg."
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "node server.js",
+    "pkg": "pkg . --targets node10-alpine-x64 --out-path pkg",
+    "test": "TZ='UTC' NODE_ENV=test jest --coverage",
+    "test:watch": "npm run test -- --watch",
+    "analyze": "BUNDLE_ANALYZE=both yarn build"
+  },
+  "dependencies": {
+    "@material-ui/core": "^1.4.3",
+    "@material-ui/icons": "^2.0.1",
+    "@zeit/next-bundle-analyzer": "^0.1.1",
+    "@zeit/next-source-maps": "^0.0.2",
+    "apollo-cache-inmemory": "^1.2.6",
+    "apollo-client": "^2.3.7",
+    "apollo-link": "^1.2.2",
+    "apollo-link-http": "^1.5.4",
+    "apollo-link-log": "^1.0.1",
+    "compression": "^1.7.3",
+    "cookie": "^0.3.1",
+    "date-fns": "^1.29.0",
+    "debug": "^3.1.0",
+    "dotenv-safe": "^6.0.0",
+    "express": "^4.16.3",
+    "formik": "^1.0.2",
+    "helmet": "^3.13.0",
+    "isomorphic-unfetch": "^2.1.1",
+    "morgan": "^1.9.0",
+    "next": "^6.1.1",
+    "next-routes": "^1.4.2",
+    "prop-types": "^15.6.2",
+    "ramda": "^0.25.0",
+    "react": "^16.4.2",
+    "react-apollo": "^2.1.9",
+    "react-dom": "^16.4.2",
+    "react-jss": "^8.6.1",
+    "recompose": "^0.28.2",
+    "styled-jsx": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.46",
+    "@babel/preset-flow": "7.0.0-beta.46",
+    "@pisano/enzyme": "^3.3.0-pisano.public.1",
+    "@pisano/enzyme-adapter-react-16": "^1.1.1-pisano.public.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-plugin-macros": "^2.4.0",
+    "concurrently": "^3.6.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "flow-bin": "^0.78.0",
+    "graphql": "^0.13.2",
+    "graphql.macro": "^1.0.2",
+    "jest": "^23.4.2",
+    "jest-specific-snapshot": "^1.0.0",
+    "pkg": "^4.3.3"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
+    "testURL": "http://localhost/",
+    "collectCoverageFrom": [
+      "{components,pages,utils}/**/*.{js,jsx}",
+      "!{components,pages,utils}/**/*.test.{js,jsx}",
+      "!{components,pages,utils}/**/*.example.{js,jsx}"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/",
+      "<rootDir>/.next/"
+    ],
+    "resetMocks": true,
+    "resetModules": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 73,
+        "functions": 75,
+        "lines": 79,
+        "statements": 77
+      }
+    }
+  }
+}

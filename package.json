@@ -1,0 +1,115 @@
+{
+  "private": true,
+  "name": "calendar-todo",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf {node_modules,docker-compose.yml} && rm -rf ./packages/*/node_modules && rm -rf ./packages/*/.DS_Store && rm -rf ./packages/*/*.log && rm -rf ./packages/*/.env",
+    "postinstall": "lerna bootstrap",
+    "test": "lerna run test",
+    "flow": "flow",
+    "flow-coverage": "flow-coverage-report",
+    "eslint": "eslint ./",
+    "format": "prettier --write 'packages/**/*.{js,json,md}' '*.{json,md,js}'",
+    "release": "lerna publish --conventional-commits --changelog-preset=angular"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0",
+    "flow-bin": "^0.78.0",
+    "flow-coverage-report": "^0.5.0",
+    "husky": "^0.14.3",
+    "lerna": "^3.0.0-rc.0",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.14.0"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "flow-coverage-report": {
+    "concurrentFiles": 5,
+    "includeGlob": [
+      "packages/**/*.js"
+    ],
+    "excludeGlob": [
+      "packages/*/node_modules/**",
+      "packages/*/lib/**",
+      "packages/*/.next/**",
+      "packages/*/coverage/**",
+      "packages/*/storybook-static/**"
+    ],
+    "type": [
+      "text"
+    ],
+    "threshold": 83
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb",
+      "plugin:flowtype/recommended",
+      "plugin:jest/recommended",
+      "prettier",
+      "prettier/react",
+      "prettier/flowtype"
+    ],
+    "plugins": [
+      "prettier",
+      "jest",
+      "flowtype"
+    ],
+    "env": {
+      "jest/globals": true
+    },
+    "rules": {
+      "prettier/prettier": "error",
+      "import/no-named-as-default": 0,
+      "import/no-extraneous-dependencies": 0,
+      "react/require-default-props": 0,
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js"
+          ]
+        }
+      ],
+      "jsx-a11y/anchor-is-valid": [
+        "error",
+        {
+          "components": [
+            "Link"
+          ],
+          "specialLink": [
+            "route"
+          ],
+          "aspects": [
+            "noHref",
+            "invalidHref",
+            "preferButton"
+          ]
+        }
+      ]
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+# library
+packages/*/lib/
+
+# web
+.next
+storybook-static
+
+# flow
+flow-typed/
+
+# test
+coverage/
+
+# server
+packages/server/token.json
