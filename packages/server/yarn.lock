@@ -1603,8 +1603,8 @@ combined-stream@1.0.6, combined-stream@~1.0.5:
     delayed-stream "~1.0.0"
 
 commander@^2.8.1:
-  version "2.17.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.0.tgz#9d07b25e2a6f198b76d8b756a0e8a9604a6a1a60"
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -2637,12 +2637,11 @@ graphql-extensions@0.1.0-beta.0:
     core-js "^2.5.3"
     source-map-support "^0.5.1"
 
-graphql-request@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-1.8.0.tgz#baa18d482b4c3f84cb913ba4b771ae734e09b409"
+graphql-request@^1.8.0:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-1.8.1.tgz#859f38810e4fd7ee4ce0db7cf5e9c6ee13f1ab94"
   dependencies:
     cross-fetch "2.0.0"
-    graphql "^0.13.2"
 
 graphql-subscriptions@^0.5.8:
   version "0.5.8"

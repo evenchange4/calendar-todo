@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AddButton 1`] = `
+<React.Fragment>
+  <Fixed>
+    <WithStyles(Button)
+      aria-label="Add"
+      color="primary"
+      onClick={[Function]}
+      variant="fab"
+    >
+      <pure(Add) />
+    </WithStyles(Button)>
+  </Fixed>
+  <EventForm
+    onHide={[Function]}
+    open={false}
+  />
+</React.Fragment>
+`;

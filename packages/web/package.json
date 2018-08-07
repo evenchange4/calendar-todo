@@ -92,14 +92,6 @@
       "<rootDir>/.next/"
     ],
     "resetMocks": true,
-    "resetModules": true,
-    "coverageThreshold": {
-      "global": {
-        "branches": 73,
-        "functions": 75,
-        "lines": 79,
-        "statements": 77
-      }
-    }
+    "resetModules": true
   }
 }

@@ -19,10 +19,10 @@ install:
 script:
   - yarn run eslint
   - ./tasks/flow-coverage.sh
-  # - ./node_modules/.bin/lerna run test
+  - ./node_modules/.bin/lerna run test
 
 after_success:
-  # - ./node_modules/.bin/codecov
+  - ./node_modules/.bin/codecov
 
 cache:
   yarn: true

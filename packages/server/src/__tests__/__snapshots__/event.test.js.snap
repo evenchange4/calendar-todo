@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rest modules query Events 1`] = `
+Object {
+  "event": Object {
+    "description": "Join the Introduction in AWS Cloud Computing Workshop and understand the core concepts of “Cloud Computing” plus the different attributes such as reliability, fault tolerance, elasticity, scalability and pay-as-you-go pricing. Whether you are an Enterprise looking for IT innovation, agility and resiliency while reducing costs or small and medium business who wants to accelerate growth without a big upfront investment in cash or time for technology, the AWS Cloud provides a complete set of infrastructure services at zero upfront costs which are available with a few clicks and within minutes.",
+    "end": Object {
+      "dateTime": "2018-08-07T08:00:00+08:00",
+    },
+    "htmlLink": "https://www.google.com/calendar/event?eid=MGt2MWowb2w5ZDAyaWhjYTFwOHFjdjV0cmMgZXZlbmNoYW5nZTNAbQ",
+    "id": "0kv1j0ol9d02ihca1p8qcv5trc",
+    "location": "taipei",
+    "start": Object {
+      "dateTime": "2018-08-07T00:00:00+08:00",
+    },
+    "summary": "Workshop 1: AWS 101 - Introduction to AWS Cloud Computing",
+  },
+}
+`;
