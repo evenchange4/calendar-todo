@@ -57,7 +57,7 @@
     "type": [
       "text"
     ],
-    "threshold": 81
+    "threshold": 80
   },
   "eslintConfig": {
     "parser": "babel-eslint",

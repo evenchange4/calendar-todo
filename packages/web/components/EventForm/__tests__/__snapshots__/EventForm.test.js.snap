@@ -73,9 +73,9 @@ exports[`should render EventForm 1`] = `
           initialValues={
             Object {
               "description": "",
-              "end": 2018-08-07T14:15:06.284Z,
+              "end": 2018-08-07T12:34:56.000Z,
               "location": "",
-              "start": 2018-08-07T14:15:06.284Z,
+              "start": 2018-08-07T12:34:56.000Z,
               "summary": "",
             }
           }
@@ -98,9 +98,9 @@ exports[`should render EventForm 1`] = `
             initialValues={
               Object {
                 "description": "",
-                "end": 2018-08-07T14:15:06.284Z,
+                "end": 2018-08-07T12:34:56.000Z,
                 "location": "",
-                "start": 2018-08-07T14:15:06.284Z,
+                "start": 2018-08-07T12:34:56.000Z,
                 "summary": "",
               }
             }
@@ -132,9 +132,9 @@ exports[`should render EventForm 1`] = `
             values={
               Object {
                 "description": "",
-                "end": 2018-08-07T14:15:06.284Z,
+                "end": 2018-08-07T12:34:56.000Z,
                 "location": "",
-                "start": 2018-08-07T14:15:06.284Z,
+                "start": 2018-08-07T12:34:56.000Z,
                 "summary": "",
               }
             }
@@ -467,9 +467,9 @@ exports[`should render EventForm 1`] = `
                 initialValues={
                   Object {
                     "description": "",
-                    "end": 2018-08-07T14:15:06.284Z,
+                    "end": 2018-08-07T12:34:56.000Z,
                     "location": "",
-                    "start": 2018-08-07T14:15:06.284Z,
+                    "start": 2018-08-07T12:34:56.000Z,
                     "summary": "",
                   }
                 }
@@ -502,9 +502,9 @@ exports[`should render EventForm 1`] = `
                 values={
                   Object {
                     "description": "",
-                    "end": 2018-08-07T14:15:06.284Z,
+                    "end": 2018-08-07T12:34:56.000Z,
                     "location": "",
-                    "start": 2018-08-07T14:15:06.284Z,
+                    "start": 2018-08-07T12:34:56.000Z,
                     "summary": "",
                   }
                 }
@@ -937,9 +937,9 @@ exports[`should render EventForm 1`] = `
                     initialValues={
                       Object {
                         "description": "",
-                        "end": 2018-08-07T14:15:06.284Z,
+                        "end": 2018-08-07T12:34:56.000Z,
                         "location": "",
-                        "start": 2018-08-07T14:15:06.284Z,
+                        "start": 2018-08-07T12:34:56.000Z,
                         "summary": "",
                       }
                     }
@@ -973,9 +973,9 @@ exports[`should render EventForm 1`] = `
                     values={
                       Object {
                         "description": "",
-                        "end": 2018-08-07T14:15:06.284Z,
+                        "end": 2018-08-07T12:34:56.000Z,
                         "location": "",
-                        "start": 2018-08-07T14:15:06.284Z,
+                        "start": 2018-08-07T12:34:56.000Z,
                         "summary": "",
                       }
                     }
@@ -2473,7 +2473,7 @@ exports[`should render EventForm 1`] = `
                                                                   onChange={[Function]}
                                                                   required={true}
                                                                   type="datetime-local"
-                                                                  value="2018-08-07T14:15"
+                                                                  value="mock"
                                                                 >
                                                                   <Input
                                                                     classes={
@@ -2501,7 +2501,7 @@ exports[`should render EventForm 1`] = `
                                                                     onChange={[Function]}
                                                                     required={true}
                                                                     type="datetime-local"
-                                                                    value="2018-08-07T14:15"
+                                                                    value="mock"
                                                                   >
                                                                     <div
                                                                       className="MuiInput-root-86 MuiInput-formControl-87 MuiInput-underline-90"
@@ -2517,7 +2517,7 @@ exports[`should render EventForm 1`] = `
                                                                         onFocus={[Function]}
                                                                         required={true}
                                                                         type="datetime-local"
-                                                                        value="2018-08-07T14:15"
+                                                                        value="mock"
                                                                       />
                                                                     </div>
                                                                   </Input>
@@ -2615,7 +2615,7 @@ exports[`should render EventForm 1`] = `
                                                                   onChange={[Function]}
                                                                   required={true}
                                                                   type="datetime-local"
-                                                                  value="2018-08-07T14:15"
+                                                                  value="mock"
                                                                 >
                                                                   <Input
                                                                     classes={
@@ -2643,7 +2643,7 @@ exports[`should render EventForm 1`] = `
                                                                     onChange={[Function]}
                                                                     required={true}
                                                                     type="datetime-local"
-                                                                    value="2018-08-07T14:15"
+                                                                    value="mock"
                                                                   >
                                                                     <div
                                                                       className="MuiInput-root-86 MuiInput-formControl-87 MuiInput-underline-90"
@@ -2659,7 +2659,7 @@ exports[`should render EventForm 1`] = `
                                                                         onFocus={[Function]}
                                                                         required={true}
                                                                         type="datetime-local"
-                                                                        value="2018-08-07T14:15"
+                                                                        value="mock"
                                                                       />
                                                                     </div>
                                                                   </Input>
