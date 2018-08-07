@@ -7,7 +7,7 @@ import { Fixed } from './styled-components';
 
 type State = { isOpen: boolean };
 
-class AddButton extends React.Component<{||}, State> {
+class AddButton extends React.PureComponent<{||}, State> {
   state = {
     isOpen: false,
   };

@@ -7,7 +7,6 @@ import { type Context } from '../utils/type.flow';
 import { type PageContext } from '../utils/material-helper';
 
 type InnerProps = {
-  styleTags: string,
   pageContext: PageContext,
 };
 
@@ -16,9 +15,9 @@ const NextDocument: Class<React.Component<InnerProps>> = Document;
 export default class MyDocument extends NextDocument {
   static async getInitialProps({ renderPage }: Context) {
     // Render app and page and get the context of the page with collected side effects.
-    let pageContext: PageContext;
+    let pageContext;
     const page = renderPage(Component => {
-      const WrappedComponent = props => {
+      const WrappedComponent = (props: InnerProps) => {
         pageContext = props.pageContext; /* eslint-disable-line */
         return <Component {...props} />;
       };
@@ -39,9 +38,9 @@ export default class MyDocument extends NextDocument {
             id="jss-server-side"
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
-              __html: pageContext.sheetsRegistry
-                .toString()
-                .replace(/[\s\n]/g, ''),
+              __html:
+                pageContext &&
+                pageContext.sheetsRegistry.toString().replace(/[\s\n]/g, ''),
             }}
           />
           {flush() || null}
@@ -53,7 +52,7 @@ export default class MyDocument extends NextDocument {
   props: InnerProps;
 
   render() {
-    const { styleTags, pageContext } = this.props;
+    const { pageContext } = this.props;
     return (
       <html lang="en">
         <Head>
@@ -80,7 +79,6 @@ export default class MyDocument extends NextDocument {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
           />
-          {styleTags}
         </Head>
         <body>
           <Main />

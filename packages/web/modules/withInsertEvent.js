@@ -2,6 +2,7 @@
 import { graphql } from 'react-apollo';
 import { gql } from 'graphql.macro';
 import * as R from 'ramda';
+import { EventListFragment } from './fragments';
 import { GRAPHQL_TAG as QUERY_EVENTS } from './withEvents';
 import { type HOC, type Proxy, type Event } from '../utils/type.flow';
 
@@ -36,11 +37,10 @@ export const GRAPHQL_TAG: Object = gql`
       start: { dateTime: $start }
       end: { dateTime: $end }
     ) {
-      id
-      summary
-      location
+      ...EventListFragment
     }
   }
+  ${EventListFragment}
 `;
 
 /**

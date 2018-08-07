@@ -28,7 +28,7 @@ export default function createApolloClient(
   return new ApolloClient({
     connectToDevTools: !checkServer(),
     ssrMode: checkServer(), // Disables forceFetch on the server (so queries are only run once)
-    link: httpLink,
+    link: logLink.concat(httpLink),
     cache: new InMemoryCache().restore(initialState),
   });
 }

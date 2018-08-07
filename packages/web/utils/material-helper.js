@@ -2,10 +2,8 @@
 // @flow
 
 import { SheetsRegistry } from 'jss';
-import {
-  createMuiTheme,
-  createGenerateClassName,
-} from '@material-ui/core/styles';
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+import createGenerateClassName from '@material-ui/core/styles/createGenerateClassName';
 import blue from '@material-ui/core/colors/blue';
 import red from '@material-ui/core/colors/red';
 import checkServer from './checkServer';

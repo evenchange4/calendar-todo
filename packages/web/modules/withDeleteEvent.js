@@ -8,7 +8,7 @@ import { type HOC, type Proxy } from '../utils/type.flow';
 /**
  * Type (additional props)
  */
-export type Response = { data: { deleteEvent: string } };
+export type Response = { data: { delete: string } };
 export type DeleteEvent = (eventId: string) => Promise<Response>;
 export type InjectedProps = { deleteEvent: DeleteEvent };
 

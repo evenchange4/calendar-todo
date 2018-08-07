@@ -1,6 +1,7 @@
 // @flow
 import { graphql } from 'react-apollo';
 import { gql } from 'graphql.macro';
+import { EventDetailFragment } from './fragments';
 import { type HOC, type Event } from '../utils/type.flow';
 
 /**
@@ -37,19 +38,10 @@ export const GRAPHQL_TAG: Object = gql`
       start: { dateTime: $start }
       end: { dateTime: $end }
     ) {
-      id
-      summary
-      location
-      htmlLink
-      description
-      start {
-        dateTime
-      }
-      end {
-        dateTime
-      }
+      ...EventDetailFragment
     }
   }
+  ${EventDetailFragment}
 `;
 
 /**

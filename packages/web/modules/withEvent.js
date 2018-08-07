@@ -1,7 +1,7 @@
 // @flow
 import { graphql, type OptionProps } from 'react-apollo';
 import { gql } from 'graphql.macro';
-// import { SceneTypeFragment } from './fragments';
+import { EventDetailFragment } from './fragments';
 import { type HOC, type Event } from '../utils/type.flow';
 
 /**
@@ -18,19 +18,10 @@ export type InjectedProps = {
 export const GRAPHQL_TAG: Object = gql`
   query event($eventId: ID) {
     event(eventId: $eventId) {
-      id
-      summary
-      location
-      htmlLink
-      description
-      start {
-        dateTime
-      }
-      end {
-        dateTime
-      }
+      ...EventDetailFragment
     }
   }
+  ${EventDetailFragment}
 `;
 
 /**

@@ -8,6 +8,7 @@ import { google } from 'googleapis';
 import compression from 'compression';
 import helmet from 'helmet';
 import morgan from 'morgan';
+import cors from 'cors';
 import typeDefs from './modules/typeDefs';
 import resolvers from './modules/resolvers';
 import log from './utils/log';
@@ -27,7 +28,8 @@ const bootstrap = async () => {
   app.use(compression({ threshold: 0 }));
   app.use(helmet());
   app.use(morgan('combined'));
-  app.get('/health', (req, res) => res.send('200 OK')); // Note: For HEALTHCHECK
+  app.use(cors());
+  (app: any).get('/health', (req, res) => res.send('200 OK')); // Note: For HEALTHCHECK
 
   server.applyMiddleware({ app });
 
