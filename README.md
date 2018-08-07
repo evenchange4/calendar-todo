@@ -19,6 +19,8 @@ There are two micro-services in this application:
 
 ## Usage
 
+Pull automated-build images from [DockerHub](https://hub.docker.com/r/evenchange4/calendar-todo-web/):
+
 ```shell
 $ docker run --rm -it \
   -p 4000:4000 \
@@ -28,7 +30,7 @@ $ docker run --rm -it \
   -e "GOOGLE_CLIENT_ID=927669772833-ou0jjulc4p68dbfmfnltjqk83rgd5mtr.apps.googleusercontent.com" \
   -e "GOOGLE_CLIENT_SECRET=jmn2fzU9n55PIX6FwswyWcDV" \
   -e "GOOGLE_REDIRECT_URL=urn:ietf:wg:oauth:2.0:oob" \
-  calendar-todo/server
+  evenchange4/calendar-todo-server:latest
 # Enter the code...
 
 $ docker run --rm -it \
@@ -37,7 +39,7 @@ $ docker run --rm -it \
   -e "PORT=4001" \
   -e "DEBUG=web" \
   -e "API_DOMAIN=http://localhost:4000/graphql" \
-  calendar-todo/web
+  evenchange4/calendar-todo-web:latest
 ```
 
 Screenshot:
