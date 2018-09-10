@@ -65,7 +65,7 @@
     "@pisano/enzyme": "3.3.0-pisano.public.1",
     "@pisano/enzyme-adapter-react-16": "1.1.1-pisano.public.1",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "23.4.2",
+    "babel-jest": "23.6.0",
     "babel-plugin-macros": "2.4.0",
     "concurrently": "3.6.1",
     "enzyme": "3.3.0",
@@ -74,7 +74,7 @@
     "flow-bin": "0.78.0",
     "graphql": "0.13.2",
     "graphql.macro": "1.0.2",
-    "jest": "23.4.2",
+    "jest": "23.6.0",
     "jest-specific-snapshot": "1.0.0",
     "pkg": "4.3.3"
   },
