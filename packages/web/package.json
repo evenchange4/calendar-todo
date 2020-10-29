@@ -47,7 +47,7 @@
     "formik": "1.0.2",
     "helmet": "3.13.0",
     "isomorphic-unfetch": "2.1.1",
-    "morgan": "1.9.0",
+    "morgan": "1.9.1",
     "next": "6.1.1",
     "next-routes": "1.4.2",
     "prop-types": "15.6.2",
