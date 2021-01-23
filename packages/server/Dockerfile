@@ -5,7 +5,7 @@ RUN yarn install --pure-lockfile
 RUN yarn run build
 RUN yarn run pkg
 
-FROM alpine:3.8
+FROM alpine:3.13
 RUN apk update && \
   apk add --no-cache curl libstdc++ libgcc ca-certificates && \
   rm -rf /var/cache/apk/*
