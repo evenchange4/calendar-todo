@@ -43,7 +43,7 @@
     "date-fns": "1.29.0",
     "debug": "3.1.0",
     "dotenv-safe": "6.0.0",
-    "express": "4.16.3",
+    "express": "4.19.2",
     "formik": "1.0.2",
     "helmet": "3.13.0",
     "isomorphic-unfetch": "2.1.1",
