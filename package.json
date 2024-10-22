@@ -24,7 +24,7 @@
     "eslint-plugin-jest": "21.18.0",
     "eslint-plugin-jsx-a11y": "6.1.1",
     "eslint-plugin-prettier": "2.6.2",
-    "eslint-plugin-react": "7.10.0",
+    "eslint-plugin-react": "7.37.2",
     "flow-bin": "0.78.0",
     "flow-coverage-report": "0.5.0",
     "husky": "0.14.3",
