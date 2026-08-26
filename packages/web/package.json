@@ -39,7 +39,7 @@
     "apollo-link-http": "1.5.4",
     "apollo-link-log": "1.0.1",
     "compression": "1.7.3",
-    "cookie": "0.3.1",
+    "cookie": "0.7.0",
     "date-fns": "1.29.0",
     "debug": "3.1.0",
     "dotenv-safe": "6.0.0",
