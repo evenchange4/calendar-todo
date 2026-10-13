@@ -66,7 +66,7 @@
     "@pisano/enzyme-adapter-react-16": "1.1.1-pisano.public.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "23.4.2",
-    "babel-plugin-macros": "2.4.0",
+    "babel-plugin-macros": "2.8.0",
     "concurrently": "3.6.1",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
